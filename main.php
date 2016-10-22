@@ -205,107 +205,12 @@ echo '<body>';
 
 
         <div class="col-md-6">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                Статус
-              </h3>
-            </div>
-
-         <div class="box ">
-          <div class="box-body">
-      <div class=" well-sm well-social-post">
-        <form>
-            <div class="user-block">
-            <img class="img-circle " src="<?php echo $myAvatar;?>" alt="User Image">
-            <textarea class="form-control status-box" name="subject" placeholder="Какво мислите?"></textarea>
-            </div>
-        </form>
-      </div>
-      
-    </div>
-    <div class="box-footer">
-      <form action="#" method="post">
-        <ul class='list-inline status-icon post-actions'>
-                <li><a href="#"><span class="fa fa-camera fa-lg"></span></a></li>
-                <li><a href="#" class='fa fa-video-camera fa-lg'></a></li>
-                <li><a href="#" class='fa fa-file fa-lg'></a></li>
-                <li class='pull-right'><a href="#" class='btn btn-primary btn-xs status'>Публикувай</a></li>
-            </ul>
-      </form>
-    </div>
-    </div>
-  </div>
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-              <div class="box-header">
-      <div class="user-block">
-        <img class="img-circle" src="public/images/guest4.png" alt="User Image">
-        <span class="username"><a href="#">Цветомир Василев</a></span>
-        <span class="description">Публикувано на: 30 април 2016 г. в 15:31ч.</span>
-      </div>
-    </div>
-            </div>
-        <div class="box box-widget">
-    
-    <div class="box-body">
-      <p>Тестов статус с прикачена снимка към него.</p>
-      <p>Тестват се коментари , бутон харесвам , бутон не харесвам , изглед , снимки... </p>
-
-      <div class="attachment-block clearfix">
-        <img class="attachment-img" src="http://lorempixel.com/400/300/nature/4/" alt="Attachment Image">
-        <div class="attachment-pushed">
-        <h4 class="attachment-heading"><a href="http://www.lipsum.com/">Lorem ipsum text generator</a></h4>
-        <div class="attachment-text">
-        Description about the attachment can be placed here.
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="#">more</a>
-        </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-o-up"></i> Харесвам</button>
-      <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-o-down"></i> Не Харесвам</button>
-      <span class="pull-right text-muted">2 Коментара</span>
-    </div>
-    <div class="box-footer box-comments">
-    <button type="button" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-o-up"></i></button>
-    <span><a href="#">Цветомир Василев и 72 други</a></span>
-    
-    <span class="pull-right"><a href="#">&nbsp; Георги Иванов и 33 други</a></span>
-    <button type="button" class="btn btn-primary btn-xs pull-right"><i class="fa fa-thumbs-o-down"> </i></button>
-    <hr>
-      <div class="box-comment">
-        <img class="img-circle img-sm" src="public/images/guest2.png" alt="User Image">
-        <div class="comment-text">
-          <span class="username">
-          <a href="">Георги Иванов</a> 
-          <span class="text-muted pull-right">Вчера в 13:30ч</span>
-          </span>
-          Спам Спам Спам .............
-        </div>
-      </div>
-      <div class="box-comment">
-        <img class="img-circle img-sm" src="public/images/guest14.png" alt="User Image">
-        <div class="comment-text">
-          <span class="username">
-          <a href="">Иван Георгиев</a> 
-          <span class="text-muted pull-right">Днес в 18:30ч</span>
-          </span>
-          Тестов коментар
-        </div>
-      </div>
-    </div>
-    <div class="box-footer">
-      <form action="#" method="post">
-        <img class="img-responsive img-circle img-sm" src="public/images/guest4.png" alt="Alt Text">
-        <div class="img-push">
-          <input type="text" class="form-control input-sm" placeholder="Напишете коментар...">
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
+        <?php 
+        include ('inc/MainStatus.php'); //Формата за пускане на статус
+        
+        include ('section/dashboard/index.php'); //показва статусите
+        ?>
+   
 <div class="panel panel-primary">
             <div class="panel-heading">
               <div class="box-header">
