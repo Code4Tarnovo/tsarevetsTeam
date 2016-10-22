@@ -1,11 +1,15 @@
 <?php
-//Файла чрез който ще се свържем към базата данни
+/*
+Свързващия файл към базата данни.
+*/
+$DBhost = "localhost";
+$DBuser = "root";
+$DBpass = "";
+$DBname = "vthelp";
+$connect = new mysqli($DBhost, $DBuser, $DBpass, $DBname) or die("Не може да се свърже към MySQL");
 
-$dbHost = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
-
-$connect = mysql_connect($dbHost, $dbUser, $dbPass) or die("Neshto ne se poluchi vruzkata...");
-
-$selected = mysql_select_db("VThelp",$connect)
-  or die("Ne e izbrana baza :)");
+mysqli_set_charset($connect, 'UTF8');
+if (!$connect) {
+	echo 'Грешка във връзката с базата данни!';
+}
+?>
