@@ -11,7 +11,7 @@
                 <div class="profile-usermenu rightmenu">
                     <ul class="nav">
                         <li class="active">
-                            <a href="profile">
+                            <a href="main">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Home'); ?> </a>
                         </li>
