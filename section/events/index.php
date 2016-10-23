@@ -1,6 +1,6 @@
 <?php
 
-$sql = mysqli_query($connect, "SELECT * FROM `dashboard` WHERE category='3' ORDER by id DESC");
+$sql = mysqli_query($connect, "SELECT * FROM `dashboard` ORDER by id DESC");
 while ($row = mysqli_fetch_array($sql, MYSQLI_ASSOC)) {
     $statusId = $row['id'];
     $author = $row['author'];

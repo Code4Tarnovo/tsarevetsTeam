@@ -1,7 +1,8 @@
 <?php
 session_start();
+session_destroy();
 if (!isset($_SESSION['userSession'])) {
- header("Location: ../welcome.php");
+ header("Location: ../welcome");
 } else if (isset($_SESSION['userSession'])!="") {
  session_destroy();
  unset($_SESSION['userSession']);
