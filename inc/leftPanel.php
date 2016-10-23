@@ -13,7 +13,13 @@
                         <li class="active">
                             <a href="main">
                                 <i class="fa fa-home" aria-hidden="true"></i>
-                                <?php echo getLanguageText('Home'); ?> </a>
+                                <?php echo getLanguageText('Home'); ?> 
+                                <?php
+                                $sql = mysqli_query($connect, "SELECT * FROM `dashboard` ORDER by id DESC");
+                                $row = mysqli_fetch_array($sql, MYSQLI_ASSOC);
+                                $sum = mysqli_num_rows($sql);
+                                echo '<span class="badge badge-inverse badge-right">'.$sum.'</span></a>';
+                                ?></a>
                         </li>
                         <li>
                             <a href="Jobs">
@@ -33,13 +39,13 @@
                         <li>
                             <a href="Taxi">
                                 <i class="fa fa-car" aria-hidden="true"></i>
-                                <?php echo getLanguageText('BlackTaxi'); ?> <span class="badge badge-inverse badge-right">10</span></a>
+                                <?php echo getLanguageText('BlackTaxi'); ?></a>
                         </li>
 
                         <li>
                             <a href="Questions">
                                 <i class="fa fa-question-circle" aria-hidden="true"></i>
-                                <?php echo getLanguageText('Questions'); ?> <span class="badge badge-inverse badge-right">10</span></a>
+                                <?php echo getLanguageText('Questions'); ?> </a>
                         </li>
                         <li>
                             <a href="Usefully">
@@ -59,7 +65,13 @@
                         <li>
                             <a href="Events">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                <?php echo getLanguageText('Events'); ?> </a>
+                                <?php echo getLanguageText('Events'); ?>
+                                <?php
+                                $sql = mysqli_query($connect, "SELECT * FROM `dashboard` WHERE category = '3' ORDER by id DESC");
+                                $row = mysqli_fetch_array($sql, MYSQLI_ASSOC);
+                                $sum = mysqli_num_rows($sql);
+                                echo '<span class="badge badge-inverse badge-right">'.$sum.'</span></a>';
+                                ?>
                         </li>
                         <li>
                             <a href="Landmarks">
