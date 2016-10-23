@@ -16,28 +16,28 @@
                                 <?php echo getLanguageText('Home'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Jobs">
                                 <i class="fa fa-suitcase" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Offer'); ?>/<?php echo getLanguageText('LookingForJob'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Ads">
                                 <i class="fa fa-file"></i>
                                 <?php echo getLanguageText('Ads'); ?> </a>
                         </li>
                         <li>
-                            <a href="upload-material">
+                            <a href="Services">
                                 <i class="fa fa-cubes" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Services'); ?> </a>
                         </li>
                         <li>
-                            <a href="taxi">
+                            <a href="Taxi">
                                 <i class="fa fa-car" aria-hidden="true"></i>
                                 <?php echo getLanguageText('BlackTaxi'); ?> <span class="badge badge-inverse badge-right">10</span></a>
                         </li>
 
                         <li>
-                            <a href="friends">
+                            <a href="Questions">
                                 <i class="fa fa-question-circle" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Questions'); ?> <span class="badge badge-inverse badge-right">10</span></a>
                         </li>
@@ -47,22 +47,22 @@
                                 <?php echo getLanguageText('Usefully'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Routes">
                                 <i class="fa fa-road" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Routes'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Offenders">
                                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Offenders'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Events">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Events'); ?> </a>
                         </li>
                         <li>
-                            <a href="profile-settings">
+                            <a href="Landmarks">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <?php echo getLanguageText('Landmarks'); ?> </a>
                         </li>
