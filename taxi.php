@@ -19,11 +19,24 @@ echo '<body>';
         <div class="col-md-12">
             <div class="row">
                 <?php include('inc/leftPanel.php'); ?>
+
+
+
                 <div class="col-md-9">
-                    <?php
-                    include ('inc/MainStatus.php'); //Формата за пускане на статус
-                    include ('section/dashboard/index.php'); //показва статусите
-                    ?>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <?php echo getLanguageText('BlackTaxi');?>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <center><a href="findTaxi" class="btn btn-primary btn-xs status">Потърси транспорт</a> <a href="offerTaxi" class="btn btn-primary btn-xs status">Предложи транспорт</a></center><br>
+                            <hr><br>
+                            
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,8 +44,7 @@ echo '<body>';
 
 </div>
 
-<?php include 'inc/footer.php'; ?>
-
+<?php include ('inc/footer.php'); ?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

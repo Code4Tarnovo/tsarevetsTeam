@@ -25,7 +25,8 @@
                  <li class="pull-right"><select name="category">
                 <option value="1"><?php echo getLanguageText('Ads');?></option>
                 <option value="2"><?php echo getLanguageText('Services');?></option>
-                <option>Relish</option>
+                <option value="3"><?php echo getLanguageText('Events');?></option>
+                <option value="4"><?php echo getLanguageText('Questions');?></option>
                 </select></li>
                  
             </ul>
@@ -39,14 +40,14 @@
                 $date = date("F j, Y, g:i a");
 
                 $subject = mysqli_real_escape_string($connect, $subject);
-                if ($subject !== NULL) {
+                if (!empty($subject)) {
                     $query = mysqli_query($connect, "INSERT INTO dashboard (author, category, subject, date)VALUES ('$author', '$category', '$subject', '$date')");
-                    if ($query) {
+                    if ($query == true) {
                         echo "<div class='alert alert-success'>Успешно добавен статус.</div>";
-                    } else {
-                        echo "Няква грешка";
                     }
-                }
+                } else {
+                        echo "<div class='alert alert-warning'>Грешка: Полето не може да бъде празно!</div>";
+                    }
             }
             ?>
     </div>

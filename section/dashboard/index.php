@@ -16,7 +16,12 @@ while ($row = mysqli_fetch_array($sql, MYSQLI_ASSOC)) {
         $statusCategory = $row['category'];
         $catSql = mysqli_query($connect, "SELECT * FROM `categories` WHERE catId = $statusCategory");
         $rowCat = mysqli_fetch_array($catSql, MYSQLI_ASSOC);
-        echo '<span class="description">Публикувано на: ' . $date . '.      Категория: <a href="section/'.$rowCat['catUrl'].'" style="color: #ffdf31;">'.$rowCat['catName'].'</a></span>
+        if($row['author'] == $_SESSION['userSession']){
+            $deleteStatus = '<a class="fa fa-times" style="color:red; float:right;" href="func/deleteStatus.php?id='.$statusId.'" style="color:red"></a>';
+        }else{
+            $deleteStatus = '';
+        }
+        echo '<span class="description">Публикувано на: ' . $date . '.      Категория: <a href="section/'.$rowCat['catUrl'].'" style="color: #ffdf31;">'.$rowCat['catName'].'</a> '.$deleteStatus.'</span>
       </div>
     </div>
             </div>
@@ -48,7 +53,7 @@ while ($row = mysqli_fetch_array($sql, MYSQLI_ASSOC)) {
             $countComments = '';
         }
         if($allComments == 1){
-            $countComments = '1 '+  getLanguageText('Comments');
+            $countComments = '1 '.getLanguageText('Comment').'';
         }
         if($allComments > 1){
             $countComments = ''.$allComments.' коментара';

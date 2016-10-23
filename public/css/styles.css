@@ -46,6 +46,9 @@ a:hover {
     color: #6f5499;
     text-decoration: none;
 }
+#accordeonHref {
+	color: #fff;
+}
 
 .navbar{
     position: relative;

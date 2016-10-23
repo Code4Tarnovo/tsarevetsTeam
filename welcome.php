@@ -18,6 +18,16 @@ include ('inc/nav.php'); //Вкарваме nav-a
                     <h3 class="panel-title"><?php echo getLanguageText('SignUp'); ?></h3>
                 </div>
                 <div class="panel-body">
+                    <?php
+                    if(isset($_GET['emptyFields'])){
+                        echo '<div class="alert alert-dismissable alert-danger">Моля, попълнете полетата!</div>';
+                    }
+                    ?>
+                    <?php
+                    if(isset($_GET['success'])){
+                        echo '<div class="alert alert-dismissable alert-success">Успешна регистрация! Вече можете да влезете в системата!</div>';
+                    }
+                    ?>
                     <form id='register' action='func/register.php' method='post' accept-charset='UTF-8'>
                         <div class="form-group">
                             <div class="input-group">

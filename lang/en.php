@@ -5,16 +5,21 @@ return array(
 //Main
     'Title' => 'Title',
     'Message' => 'Message',
+    'Messages' => 'Messages',
     'Send' => 'Send',
     'NewsFeed' => 'Fast feed',
     'Publish' => 'Post',
     'Comment' => 'Comment',
+    'Offer' => 'Offer',
+    'LookingForJob' => 'Looking for work',
 // Cores
     'Welcome' => 'Welcome',
     'readMore' => 'Read more',
     'Hello' => 'Hello',
     'Settings' => 'Settings',
 // Users
+    'Profile' => 'Profile',
+    'EditProfile' => 'Edit profile',
     'username' => 'Username',
     'password' => 'Password',
     'Name' => 'Name',
@@ -27,6 +32,7 @@ return array(
     'RememberMe' => 'Remember me',
     'RealName' => 'Real name',
     'Email' => 'Email',
+    'Friends' => 'Friends',
 // others
     '404error' => 'The page is not found',
     'Copyright' => 'All Rights Reserved',
@@ -40,6 +46,13 @@ return array(
     'clients' => 'Clients',
     'AboutUs' => 'About Us',
     'Ads' => 'Advertising',
+    'Questions' => 'Questions',
+    'Events' => 'Events',
+    'BlackTaxi' => '"Black" Taxi',
+    'Routes' => 'Routes',
+    'Usefully' => 'Usefully',
+    'Offenders' => 'Offenders',
+    'Landmarks' => 'Landmarks',
     'Contacts' => 'Contacts'
 );
 ?>
